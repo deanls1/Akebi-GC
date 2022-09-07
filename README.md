@@ -11,6 +11,9 @@
 </p>
 
 [EN](README.md) | [简中](README_zh-Hans.md) | [繁中](README_zh-Hant.md)
+# Fork from [Akebi-Group/Akebi-GC](https://github.com/Akebi-Group/Akebi-GC/)
+# 99.9% copy from [Gktwo/Akebi-GC](https://github.com/Gktwo/Akebi-GC/)
+# Due to Billion-point OCD for certain words
 
 ---
 

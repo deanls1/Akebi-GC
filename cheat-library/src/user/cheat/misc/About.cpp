@@ -24,6 +24,10 @@ namespace cheat::feature
 		ImGui::TextColored(ImColor(28, 202, 214, 255), "Akebi discord:");
 		TextURL("Discord invite link", "https://discord.com/invite/MmV8hNZB9S", true, false);
 
+        ImGui::Text(u8"中文汉化:");
+        ImGui::SameLine();
+        ImGui::TextColored(ImColor(0, 102, 255, 255), "由gktwo,dongfang完成，我99.9%完全复制，仅为自用，");
+
         ImGui::Text("Founder:");
         ImGui::SameLine();
         ImGui::TextColored(ImColor(0, 102, 255, 255), "Callow");
