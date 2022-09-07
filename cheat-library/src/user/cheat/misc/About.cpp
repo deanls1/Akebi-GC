@@ -8,7 +8,7 @@ namespace cheat::feature
 {
     const FeatureGUIInfo& About::GetGUIInfo() const
     {
-        static const FeatureGUIInfo info{ "", "About", false };
+        static const FeatureGUIInfo info{ "", u8"关于", false };
         return info;
     }
 
@@ -28,18 +28,18 @@ namespace cheat::feature
         ImGui::SameLine();
         ImGui::TextColored(ImColor(0, 102, 255, 255), "Callow");
         
-		ImGui::Text("Main developer and updater:");
+		ImGui::Text(u8"主要开发者:");
 		ImGui::SameLine();
 		ImGui::TextColored(ImColor(0, 102, 255, 255), "Taiga");
 
-        ImGui::Text("Feature developer and Acai founder:");
+        ImGui::Text(u8"功能开发人员和Acai创始人:");
 		ImGui::SameLine();
 		ImGui::TextColored(ImColor(0, 102, 255, 255), "RyujinZX");
 
-		ImGui::Text("Main contributors:");
+		ImGui::Text(u8"主要贡献者:");
 		ImGui::TextColored(ImColor(0, 102, 255, 255), "WitchGod, m0nkrel, Shichiha, harlanx, andiabrudan, hellomykami");
 
-		ImGui::Text("Full contributor list:");
+		ImGui::Text(u8"全部贡献者名单:");
 		TextURL("Github link", "https://github.com/Akebi-Group/Akebi-GC/graphs/contributors", true, false);
     }
 

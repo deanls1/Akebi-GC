@@ -7,7 +7,7 @@
 namespace cheat::feature 
 {
     GodMode::GodMode() : Feature(),
-        NFEX(f_Enabled, "God mode", "m_GodMode", "Player", false, false)
+        NFEX(f_Enabled, u8"Œﬁµ–ƒ£ Ω", "m_GodMode", "Player", false, false)
     {
 		HookManager::install(app::VCHumanoidMove_NotifyLandVelocity, VCHumanoidMove_NotifyLandVelocity_Hook);
 		HookManager::install(app::Miscs_CheckTargetAttackable, Miscs_CheckTargetAttackable_Hook);
@@ -17,13 +17,13 @@ namespace cheat::feature
 
     const FeatureGUIInfo& GodMode::GetGUIInfo() const
     {
-        static const FeatureGUIInfo info{ "", "Player", false };
+        static const FeatureGUIInfo info{ "", u8"ÕÊº“¿‡", false };
         return info;
     }
 
     void GodMode::DrawMain()
     {
-        ConfigWidget("God Mode", f_Enabled, "Enables god mode, i.e. no incoming damage including environmental damage.\n");
+        ConfigWidget(u8"√‚“ﬂ…À∫¶", f_Enabled, "Enables god mode, i.e. no incoming damage including environmental damage.\n");
     }
 
     bool GodMode::NeedStatusDraw() const
@@ -33,7 +33,7 @@ namespace cheat::feature
 
     void GodMode::DrawStatus() 
     {
-        ImGui::Text("God Mode");
+        ImGui::Text(u8"√‚“ﬂ…À∫¶");
     }
 
     GodMode& GodMode::GetInstance()
