@@ -26,7 +26,7 @@ namespace cheat::feature
 
         ImGui::Text(u8"中文汉化:");
         ImGui::SameLine();
-        ImGui::TextColored(ImColor(0, 102, 255, 255), "由gktwo,dongfang完成，我99.9%完全复制，仅为自用，");
+        ImGui::TextColored(ImColor(0, 102, 255, 255), u8"由gktwo,dongfang完成，我99.9%完全复制，仅为自用，");
 
         ImGui::Text("Founder:");
         ImGui::SameLine();
