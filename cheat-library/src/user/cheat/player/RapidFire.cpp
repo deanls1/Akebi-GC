@@ -25,16 +25,16 @@ namespace cheat::feature
 //		NF(f_MultiTarget, "Multi-target", "RapidFire", false),
 //		NF(f_MultiTargetRadius, "Multi-target Radius", "RapidFire", 20.0f),
 //		NF(f_MultiAnimation, "Multi-animation", "RapidFire", false)
-        NF(f_Enabled, u8"攻击作弊", u8"攻击作弊", false),
-        NF(f_MultiHit, u8"重复攻击", u8"攻击作弊", false),
-        NF(f_Multiplier, u8"命中乘数", u8"攻击作弊", 2),
-        NF(f_OnePunch, u8"一拳模式", u8"攻击作弊", false),
-        NF(f_Randomize, u8"随机", u8"攻击作弊", false),
-        NF(f_minMultiplier, u8"最小乘数", u8"攻击作弊", 1),
-        NF(f_maxMultiplier, u8"最大乘数", u8"攻击作弊", 3),
-        NF(f_MultiTarget, u8"多目标", u8"攻击作弊", false),
-        NF(f_MultiTargetRadius, u8"多目标半径", u8"攻击作弊", 20.0f),
-        NF(f_MultiAnimation, u8"多重动画", u8"攻击作弊", false)
+        NF(f_Enabled, u8"攻击模块", u8"攻击模块", false),
+        NF(f_MultiHit, u8"重复攻击", u8"攻击模块", false),
+        NF(f_Multiplier, u8"命中乘数", u8"攻击模块", 2),
+        NF(f_OnePunch, u8"一拳模式", u8"攻击模块", false),
+        NF(f_Randomize, u8"随机", u8"攻击模块", false),
+        NF(f_minMultiplier, u8"最小乘数", u8"攻击模块", 1),
+        NF(f_maxMultiplier, u8"最大乘数", u8"攻击模块", 3),
+        NF(f_MultiTarget, u8"多目标", u8"攻击模块", false),
+        NF(f_MultiTargetRadius, u8"多目标半径", u8"攻击模块", 20.0f),
+        NF(f_MultiAnimation, u8"多重动画", u8"攻击模块", false)
         {
 		// HookManager::install(app::MoleMole_LCBaseCombat_DoHitEntity, LCBaseCombat_DoHitEntity_Hook); -- Looks like FireBeingHitEvent is superior to this.
 		HookManager::install(app::MoleMole_VCAnimatorEvent_HandleProcessItem, VCAnimatorEvent_HandleProcessItem_Hook);
@@ -43,7 +43,7 @@ namespace cheat::feature
 
 	const FeatureGUIInfo& RapidFire::GetGUIInfo() const
 	{
-		static const FeatureGUIInfo info{ u8"攻击作弊", u8"玩家类", true };
+		static const FeatureGUIInfo info{ u8"攻击模块", u8"玩家类", true };
 		return info;
 	}
 
