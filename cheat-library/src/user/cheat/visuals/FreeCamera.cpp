@@ -25,6 +25,7 @@ namespace cheat::feature
 	FreeCamera::FreeCamera() : Feature(),
 		NF(f_Enabled, "Free Camera", "Visuals::FreeCamera", false),
 		NF(f_FreezeAnimation, "Freeze Character Animation", "Visuals::FreeCamera", false),
+		NF(f_BlockInput, "Block Input", "Visuals::FreeCamera", false),
 		NF(f_DamageOverlay, "Damage Overlay", "Visuals::FreeCamera", false),
 		NF(f_HpOverlay, "Enemy HP Overlay", "Visuals::FreeCamera", false),
 		NF(f_Speed, "Speed", "Visuals::FreeCamera", 1.0f),
@@ -61,6 +62,7 @@ namespace cheat::feature
 	{
 		ConfigWidget(u8"开/关", f_Enabled);
 		ConfigWidget(u8"冻结角色动作", f_FreezeAnimation, u8"冻结角色动作.");
+		ConfigWidget("Block User Input", f_BlockInput, "If enabled, any input will be blocked.");
 		if (f_Enabled)
 		{
 			ConfigWidget(u8"切换伤害覆盖", f_DamageOverlay, "Remove damage output overlay");
@@ -80,7 +82,7 @@ namespace cheat::feature
 				ConfigWidget(u8"视野速度", f_FOVSpeed, 0.01f, 0.01f, 100.0f);
 				ConfigWidget(u8"视野范围", f_FOV, 0.1f, 0.01f, 200.0f, u8"垂直视场变化。水平视场取决于视口的纵横比");
 				if (ImGui::Button(u8"转换FoV到35mm FF焦距"))
-					focalLength = 24 / (2 * tan((f_FOV * 3.14159265) / (2 * 180))); // FocalLength = (vertical) sensor size / 2 * tan( 2*(vertical) FoV * Pi / 180)  Remember to convert degree to radian.  
+					focalLength = 24 / (2 * tan((f_FOV * 3.14159265) / (2 * 180))); // FocalLength = (vertical) sensor size / 2 * tan( 2*(vertical) FoV * Pi / 180)  Remember to convert degree to radian.
 				ImGui::Text(u8"焦距: %f", focalLength);
 				ImGui::Spacing();
 				ConfigWidget(u8"运动平滑", f_MovSmoothing, 0.01f, 0.001f, 1.0f, u8"低=流畅");
@@ -189,9 +191,9 @@ namespace cheat::feature
 			targetPosition = targetPosition - app::Transform_get_right(freeCam_Transform, nullptr) * settings.f_Speed;
 
 		if (settings.f_LeftRoll.value().IsPressed())
-			targetRotation.roll += settings.f_Speed;
+			targetRotation.roll += settings.f_RollSpeed;
 		if (settings.f_RightRoll.value().IsPressed())
-			targetRotation.roll -= settings.f_Speed;
+			targetRotation.roll -= settings.f_RollSpeed;
 		if (settings.f_ResetRoll.value().IsPressed())
 			targetRotation.roll = 0.0f;
 
@@ -242,6 +244,12 @@ namespace cheat::feature
 
 	void FreeCamera::OnGameUpdate()
 	{
+		auto uiManager = GET_SINGLETON(MoleMole_UIManager);
+		if (uiManager == nullptr)
+			return;
+
+		static bool isBlock = false;
+
 		if (f_Enabled)
 		{
 			if (mainCam == nullptr)
@@ -282,6 +290,23 @@ namespace cheat::feature
 			DisableFreeCam();
 			damageOverlay = nullptr;
 			hpOverlay = nullptr;
+		}
+
+		if (f_BlockInput)
+		{
+			if (!isBlock)
+			{
+				app::MoleMole_UIManager_EnableInput(uiManager, false, false, false, nullptr);
+				isBlock = true;
+			}
+		}
+		else
+		{
+			if (isBlock)
+			{
+				app::MoleMole_UIManager_EnableInput(uiManager, true, false, false, nullptr);
+				isBlock = false;
+			}
 		}
 
 		// Taiga#5555: There's probably be a better way of implementing this. But for now, this is just what I came up with.

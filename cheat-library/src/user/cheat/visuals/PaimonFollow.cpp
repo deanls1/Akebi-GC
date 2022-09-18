@@ -54,7 +54,7 @@ namespace cheat::feature
             GameObject::Paimon = app::GameObject_Find(string_to_il2cppi("/EntityRoot/OtherGadgetRoot/NPC_Guide_Paimon(Clone)"), nullptr);
             if (GameObject::Paimon == nullptr)
                 return;
-            
+
             GameObject::ProfileLayer = app::GameObject_Find(string_to_il2cppi("/Canvas/Pages/PlayerProfilePage"), nullptr);
             if (GameObject::ProfileLayer == nullptr)
                 return;

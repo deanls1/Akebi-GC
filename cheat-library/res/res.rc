@@ -25,18 +25,18 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 // TEXTINCLUDE
 //
 
-1 TEXTINCLUDE
+1 TEXTINCLUDE 
 BEGIN
     "resource.h\0"
 END
 
-2 TEXTINCLUDE
+2 TEXTINCLUDE 
 BEGIN
     "#include ""winres.h""\r\n"
     "\0"
 END
 
-3 TEXTINCLUDE
+3 TEXTINCLUDE 
 BEGIN
     "\r\n"
     "\0"
@@ -50,9 +50,9 @@ END
 // RCDATA
 //
 
-IMGUI_FONT              RCDATA                  "45.ttf"
+IMGUI_FONT              RCDATA                  "Ruda-Bold.ttf"
 
-IMGUI_FONT_BOLD         RCDATA                  "85.ttf"
+IMGUI_FONT_BOLD         RCDATA                  "Ruda-ExtraBold.ttf"
 
 SIGNATURES              RCDATA                  "signatures.json"
 
@@ -62,10 +62,9 @@ MAPTEYVATDATA           RCDATA                  "map_teyvat.json"
 
 MAPUNDEGROUNDMINESDATA  RCDATA                  "map_undeground_mines.json"
 
-MAPGOLDENAPPLEARCHIPELAGODATA   RCDATA                  "map_golden_apple_archipelago.json"
+MAPGOLDENAPPLEARCHIPELAGODATA RCDATA                  "map_golden_apple_archipelago.json"
 
-AssemblyChecksums       RCDATA                  "assembly_checksum.json"
-
+ASSEMBLYCHECKSUMS       RCDATA                  "assembly_checksum.json"
 
 ASCENSIONMATERIALSDATA  RCDATA                  "ascension_materials.json"
 
@@ -80,9 +79,15 @@ HDABIDINGANGELFISH      PNG                     "iconsHD\\AbidingAngelfish.png"
 
 HDABYSSMAGE             PNG                     "iconsHD\\AbyssMage.png"
 
+HDADHIGAMAWOOD          PNG                     "iconsHD\\AdhigamaWood.png"
+
 HDADORNEDUNAGI          PNG                     "iconsHD\\AdornedUnagi.png"
 
+HDAEONBLIGHTDRAKE		PNG						"iconsHD\\AeonblightDrake.png"
+
 HDAIZENMEDAKA           PNG                     "iconsHD\\AizenMedaka.png"
+
+HDAJILENAKH				PNG						"iconsHD\\Ajilenakh.png"
 
 HDAKAIMAOU              PNG                     "iconsHD\\AkaiMaou.png"
 
@@ -106,7 +111,7 @@ HDAMOSBOW               PNG                     "iconsHD\\AmosBow.png"
 
 HDANCIENTRIME           PNG                     "iconsHD\\AncientRime.png"
 
-HDANDRIUS 				PNG                     "iconsHD\\Andrius.png"
+HDANDRIUS               PNG                     "iconsHD\\Andrius.png"
 
 HDANEMOCRYSTALFLY       PNG                     "iconsHD\\AnemoCrystalfly.png"
 
@@ -132,7 +137,7 @@ HDARCHAICSTONE          PNG                     "iconsHD\\ArchaicStone.png"
 
 HDARTIFACT              PNG                     "iconsHD\\Artifact.png"
 
-HDAZHDAHA 				PNG                     "iconsHD\\Azhdaha.png"
+HDAZHDAHA               PNG                     "iconsHD\\Azhdaha.png"
 
 HDBAKEDANUKI            PNG                     "iconsHD\\BakeDanuki.png"
 
@@ -186,15 +191,15 @@ HDBLUEHORNEDLIZARD      PNG                     "iconsHD\\BlueHornedLizard.png"
 
 HDBLUETHUNDERWEASEL     PNG                     "iconsHD\\BluethunderWeasel.png"
 
-HDBOAR 					PNG                     "iconsHD\\Boar.png"
+HDBOAR                  PNG                     "iconsHD\\Boar.png"
 
 HDBOOK                  PNG                     "iconsHD\\Book.png"
 
-HDBOOKPAGE				PNG                     "iconsHD\\BookPage.png"
+HDBOOKPAGE              PNG                     "iconsHD\\BookPage.png"
 
 HDBOOTWEASEL            PNG                     "iconsHD\\BootWeasel.png"
 
-HDBOUNCYMUSHROOM		PNG						"iconsHD\\BouncyMushroom.png"
+HDBOUNCYMUSHROOM        PNG                     "iconsHD\\BouncyMushroom.png"
 
 HDBRIGHTCROWNPIGEON     PNG                     "iconsHD\\BrightcrownPigeon.png"
 
@@ -216,7 +221,7 @@ HDCANDACE               PNG                     "iconsHD\\Candace.png"
 
 HDCARROT                PNG                     "iconsHD\\Carrot.png"
 
-HDCAT 					PNG                     "iconsHD\\Cat.png"
+HDCAT                   PNG                     "iconsHD\\Cat.png"
 
 HDCAVE                  PNG                     "iconsHD\\Cave.png"
 
@@ -236,7 +241,7 @@ HDCINNABARSPINDLE       PNG                     "iconsHD\\CinnabarSpindle.png"
 
 HDCLOUDLEISURESTEPS     PNG                     "iconsHD\\CloudleisureSteps.png"
 
-HDCLUSTERLEAFOFCULTIVATION	PNG					"iconsHD\\ClusterleafOfCultivation.png"
+HDCLUSTERLEAFOFCULTIVATION PNG                  "iconsHD\\ClusterleafOfCultivation.png"
 
 HDCOLLEI                PNG                     "iconsHD\\Collei.png"
 
@@ -252,7 +257,7 @@ HDCORLAPIS              PNG                     "iconsHD\\CorLapis.png"
 
 HDCRAB                  PNG                     "iconsHD\\Crab.png"
 
-HDCRANE 				PNG                     "iconsHD\\Crane.png"
+HDCRANE                 PNG                     "iconsHD\\Crane.png"
 
 HDCRESCENTPIKE          PNG                     "iconsHD\\CrescentPike.png"
 
@@ -266,7 +271,7 @@ HDCRIMSONFOX            PNG                     "iconsHD\\CrimsonFox.png"
 
 HDCROW                  PNG                     "iconsHD\\Crow.png"
 
-HDCRYOBATHYSMALVISHAP 	PNG                     "iconsHD\\CryoBathysmalVishap.png"
+HDCRYOBATHYSMALVISHAP   PNG                     "iconsHD\\CryoBathysmalVishap.png"
 
 HDCRYOCRYSTALFLY        PNG                     "iconsHD\\CryoCrystalfly.png"
 
@@ -306,15 +311,15 @@ HDDEEPSEAUNAGI          PNG                     "iconsHD\\DeepSeaUnagi.png"
 
 HDDENDROBIUM            PNG                     "iconsHD\\Dendrobium.png"
 
-HDDENDROCULUS 			PNG                     "iconsHD\\Dendroculus.png"
+HDDENDROCRYSTALFLY      PNG                     "iconsHD\\DendroCrystalfly.png"
 
-HDDENDROGRANUM			PNG						"iconsHD\\DendroGranum.png"
+HDDENDROCULUS           PNG                     "iconsHD\\Dendroculus.png"
 
-HDDENDROPILE			PNG						"iconsHD\\DendroPile.png"
+HDDENDROGRANUM          PNG                     "iconsHD\\DendroGranum.png"
 
+HDDENDROPILE            PNG                     "iconsHD\\DendroPile.png"
 
-
-HDDENDROROCK			PNG						"iconsHD\\DendroRock.png"
+HDDENDROROCK            PNG                     "iconsHD\\DendroRock.png"
 
 HDDILUC                 PNG                     "iconsHD\\Diluc.png"
 
@@ -324,7 +329,7 @@ HDDIVDARAY              PNG                     "iconsHD\\DivdaRay.png"
 
 HDDODOCOTALES           PNG                     "iconsHD\\DodocoTales.png"
 
-HDDOG 					PNG                     "iconsHD\\Dog.png"
+HDDOG                   PNG                     "iconsHD\\Dog.png"
 
 HDDOMAIN                PNG                     "iconsHD\\Domain.png"
 
@@ -332,29 +337,29 @@ HDDORI                  PNG                     "iconsHD\\Dori.png"
 
 HDDRAGONSBANE           PNG                     "iconsHD\\DragonsBane.png"
 
-HDDRAGONSPINESPEAR		PNG						"iconsHD\\DragonspineSpear.png"
+HDDRAGONSPINESPEAR      PNG                     "iconsHD\\DragonspineSpear.png"
 
 HDDREAMFORM             PNG                     "iconsHD\\DreamForm.png"
 
 HDDULLBLADE             PNG                     "iconsHD\\DullBlade.png"
 
-HDDUNLINSTOOTH 			PNG                     "iconsHD\\DunlinsTooth.png"
+HDDUNLINSTOOTH          PNG                     "iconsHD\\DunlinsTooth.png"
 
 HDDUSKBIRD              PNG                     "iconsHD\\DuskBird.png"
 
-HDDVALIN 				PNG                     "iconsHD\\Dvalin.png"
+HDDVALIN                PNG                     "iconsHD\\Dvalin.png"
 
 HDECHOINGCONCH          PNG                     "iconsHD\\EchoingConch.png"
 
-HDEEL 					PNG                     "iconsHD\\Eel.png"
+HDEEL                   PNG                     "iconsHD\\Eel.png"
 
 HDEIGHTSTONETABLETS     PNG                     "iconsHD\\EightStoneTablets.png"
 
 HDELECTRICCONDUCTION    PNG                     "iconsHD\\ElectricConduction.png"
 
-HDELECTROABYSSLECTOR 	PNG                     "iconsHD\\ElectroAbyssLector.png"
+HDELECTROABYSSLECTOR    PNG                     "iconsHD\\ElectroAbyssLector.png"
 
-HDELECTROBATHYSMALVISHAP PNG                    "iconsHD\\ElectroBathysmalVishap.png"
+HDELECTROBATHYSMALVISHAP PNG                     "iconsHD\\ElectroBathysmalVishap.png"
 
 HDELECTROCRYSTAL        PNG                     "iconsHD\\ElectroCrystal.png"
 
@@ -366,7 +371,7 @@ HDELECTROGRANUM         PNG                     "iconsHD\\Electrogranum.png"
 
 HDELECTROHYPOSTASIS     PNG                     "iconsHD\\ElectroHypostasis.png"
 
-HDELECTROREGISVINE 		PNG                     "iconsHD\\ElectroRegisvine.png"
+HDELECTROREGISVINE      PNG                     "iconsHD\\ElectroRegisvine.png"
 
 HDELECTROSEELIE         PNG                     "iconsHD\\ElectroSeelie.png"
 
@@ -400,7 +405,7 @@ HDEYEOFTHESTORM         PNG                     "iconsHD\\EyeoftheStorm.png"
 
 HDFADINGTWILIGHT        PNG                     "iconsHD\\FadingTwilight.png"
 
-HDFALCON 				PNG                     "iconsHD\\Falcon.png"
+HDFALCON                PNG                     "iconsHD\\Falcon.png"
 
 HDFATUIAGENT            PNG                     "iconsHD\\FatuiAgent.png"
 
@@ -426,7 +431,7 @@ HDFESTERINGDESIRE       PNG                     "iconsHD\\FesteringDesire.png"
 
 HDFILLETBLADE           PNG                     "iconsHD\\FilletBlade.png"
 
-HDFINCH 				PNG                     "iconsHD\\Finch.png"
+HDFINCH                 PNG                     "iconsHD\\Finch.png"
 
 HDFIRWOOD               PNG                     "iconsHD\\FirWood.png"
 
@@ -450,7 +455,7 @@ HDFORMALORAY            PNG                     "iconsHD\\FormaloRay.png"
 
 HDFOWL                  PNG                     "iconsHD\\Fowl.png"
 
-HDFOX 					PNG                     "iconsHD\\Fox.png"
+HDFOX                   PNG                     "iconsHD\\Fox.png"
 
 HDFRAGRANTCEDARWOOD     PNG                     "iconsHD\\FragrantCedarWood.png"
 
@@ -552,7 +557,7 @@ HDIMAGINGCONCH          PNG                     "iconsHD\\ImagingConch.png"
 
 HDINAZUMASHRINEOFDEPTHS PNG                     "iconsHD\\InazumaShrineofDepths.png"
 
-HDINU 					PNG                     "iconsHD\\Inu.png"
+HDINU                   PNG                     "iconsHD\\Inu.png"
 
 HDIRONCHUNK             PNG                     "iconsHD\\IronChunk.png"
 
@@ -578,7 +583,7 @@ HDKAGOTSURUBEISSHIN     PNG                     "iconsHD\\KagotsurubeIsshin.png"
 
 HDKAGURASVERITY         PNG                     "iconsHD\\KagurasVerity.png"
 
-HDKAIRAGI 				PNG                     "iconsHD\\Kairagi.png"
+HDKAIRAGI               PNG                     "iconsHD\\Kairagi.png"
 
 HDKALPALATALOTUS        PNG                     "iconsHD\\KalpalataLotus.png"
 
@@ -590,7 +595,7 @@ HDKATSURAGIKIRINAGAMASA PNG                     "iconsHD\\KatsuragikiriNagamasa.
 
 HDKEQING                PNG                     "iconsHD\\Keqing.png"
 
-HDKEYSIGIL 				PNG                     "iconsHD\\KeySigil.png"
+HDKEYSIGIL              PNG                     "iconsHD\\KeySigil.png"
 
 HDKEYSIGILI             PNG                     "iconsHD\\KeySigilI.png"
 
@@ -620,6 +625,8 @@ HDLARGEROCKPILE         PNG                     "iconsHD\\LargeRockPile.png"
 
 HDLAVENDERMELON         PNG                     "iconsHD\\LavenderMelon.png"
 
+HDLAZURITEAXEMARLIN     PNG                     "iconsHD\\LazuriteAxeMarlin.png"
+
 HDLIGHTNINGSTRIKEPROBE  PNG                     "iconsHD\\LightningStrikeProbe.png"
 
 HDLIGHTUPTILEPUZZLE     PNG                     "iconsHD\\LightUpTilePuzzle.png"
@@ -638,17 +645,21 @@ HDLIZARDTAIL            PNG                     "iconsHD\\LizardTail.png"
 
 HDLOACHPEARL            PNG                     "iconsHD\\LoachPearl.png"
 
-HDLOSTPRAYERTOTHESACREDWINDS PNG                     "iconsHD\\LostPrayertotheSacredWinds.png"
+HDLOSTPRAYERTOTHESACREDWINDS PNG                "iconsHD\\LostPrayertotheSacredWinds.png"
 
 HDLOTUSHEAD             PNG                     "iconsHD\\LotusHead.png"
 
 HDLUCKLIGHTFLY          PNG                     "iconsHD\\LucklightFly.png"
+
+HDLUMENCAGE             PNG                     "iconsHD\\LumenCage.png"
 
 HDLUMENLAMP             PNG                     "iconsHD\\Lumenlamp.png"
 
 HDLUMENSPAR             PNG                     "iconsHD\\Lumenspar.png"
 
 HDLUMINESCENTSPINE      PNG                     "iconsHD\\LuminescentSpine.png"
+
+HDLUMINOUSSEELIE        PNG                     "iconsHD\\LuminousSeelie.png"
 
 HDLUNGEDSTICKLEBACK     PNG                     "iconsHD\\LungedStickleback.png"
 
@@ -682,7 +693,7 @@ HDMERCHANT              PNG                     "iconsHD\\Merchant.png"
 
 HDMESSENGER             PNG                     "iconsHD\\Messenger.png"
 
-HDMILLELITH 			PNG                     "iconsHD\\Millelith.png"
+HDMILLELITH             PNG                     "iconsHD\\Millelith.png"
 
 HDMINIPUZZLE            PNG                     "iconsHD\\MiniPuzzle.png"
 
@@ -728,7 +739,7 @@ HDNOCTILUCOUSJADE       PNG                     "iconsHD\\NoctilucousJade.png"
 
 HDNOELLE                PNG                     "iconsHD\\Noelle.png"
 
-HDNURSERIESINTHEWILDS	PNG						"iconsHD\\NurseriesInTheWilds.png"
+HDNURSERIESINTHEWILDS   PNG                     "iconsHD\\NurseriesInTheWilds.png"
 
 HDOATHSWORNEYE          PNG                     "iconsHD\\OathswornEye.png"
 
@@ -736,25 +747,27 @@ HDOCEANCRAB             PNG                     "iconsHD\\OceanCrab.png"
 
 HDOCEANID               PNG                     "iconsHD\\Oceanid.png"
 
-HDOCEANIDBOAR	        PNG			            "iconsHD\\OceanidSummons.png"
+HDOCEANIDBOAR           PNG                     "iconsHD\\OceanidSummons.png"
 
-HDOCEANIDCRAB	        PNG			            "iconsHD\\OceanidSummons.png"
+HDOCEANIDCRAB           PNG                     "iconsHD\\OceanidSummons.png"
 
-HDOCEANIDCRANE	        PNG			            "iconsHD\\OceanidSummons.png"
+HDOCEANIDCRANE          PNG                     "iconsHD\\OceanidSummons.png"
 
-HDOCEANIDFALCON	        PNG			            "iconsHD\\OceanidSummons.png"
+HDOCEANIDFALCON         PNG                     "iconsHD\\OceanidSummons.png"
 
-HDOCEANIDFINCH	        PNG			            "iconsHD\\OceanidSummons.png"
+HDOCEANIDFINCH          PNG                     "iconsHD\\OceanidSummons.png"
 
-HDOCEANIDFROG	        PNG			            "iconsHD\\OceanidSummons.png"
+HDOCEANIDFROG           PNG                     "iconsHD\\OceanidSummons.png"
 
-HDOCEANIDSQUIRREL	    PNG			            "iconsHD\\OceanidSummons.png"
+HDOCEANIDSQUIRREL       PNG                     "iconsHD\\OceanidSummons.png"
 
-HDOCEANIDWIGEON	        PNG			            "iconsHD\\OceanidSummons.png"
+HDOCEANIDWIGEON         PNG                     "iconsHD\\OceanidSummons.png"
 
 HDOLDMERCSPAL           PNG                     "iconsHD\\OldMercsPal.png"
 
 HDONIKABUTO             PNG                     "iconsHD\\Onikabuto.png"
+
+HDOOZINGCONCRETIONS     PNG                     "iconsHD\\OozingConcretions.png"
 
 HDORES                  PNG                     "iconsHD\\Ores.png"
 
@@ -766,21 +779,25 @@ HDPADISARAH             PNG                     "iconsHD\\Padisarah.png"
 
 HDPALEREDCRAB           PNG                     "iconsHD\\PaleRedCrab.png"
 
+HDPEACHOFTHEDEEPWAVES   PNG                     "iconsHD\\PeachoftheDeepWaves.png"
+
 HDPERPETUALMECHANICALARRAY PNG                  "iconsHD\\PerpetualMechanicalArray.png"
 
-HDPHANTASMALGATE		PNG						"iconsHD\\PhantasmalGate.png"
+HDPHANTASMALGATE        PNG                     "iconsHD\\PhantasmalGate.png"
 
 HDPHASEGATE             PNG                     "iconsHD\\PhaseGate.png"
 
 HDPHILANEMOMUSHROOM     PNG                     "iconsHD\\PhilanemoMushroom.png"
 
-HDPIGEON 				PNG                     "iconsHD\\Pigeon.png"
+HDPIGEON                PNG                     "iconsHD\\Pigeon.png"
 
 HDPINECONE              PNG                     "iconsHD\\Pinecone.png"
 
 HDPINEWOOD              PNG                     "iconsHD\\PineWood.png"
 
-HDPLACESOFESSENCEWORSHIP PNG                    "iconsHD\\PlacesofEssenceWorship.png"
+HDPIRATEHELM            PNG                     "iconsHD\\PirateHelm.png"
+
+HDPLACESOFESSENCEWORSHIP PNG                     "iconsHD\\PlacesofEssenceWorship.png"
 
 HDPOCKETGRIMOIRE        PNG                     "iconsHD\\PocketGrimoire.png"
 
@@ -794,11 +811,13 @@ HDPREDATOR              PNG                     "iconsHD\\Predator.png"
 
 HDPRESSUREPLATE         PNG                     "iconsHD\\PressurePlate.png"
 
+HDPRIMALCONSTRUCT		PNG						"iconsHD\\PrimalConstruct.png"
+
 HDPRIMOGEOVISHAP        PNG                     "iconsHD\\PrimoGeovishap.png"
 
 HDPRIMORDIALJADECUTTER  PNG                     "iconsHD\\PrimordialJadeCutter.png"
 
-HDPRIMORDIALJADEWINGEDSPEAR PNG                     "iconsHD\\PrimordialJadeWingedSpear.png"
+HDPRIMORDIALJADEWINGEDSPEAR PNG                 "iconsHD\\PrimordialJadeWingedSpear.png"
 
 HDPROTOTYPEAMBER        PNG                     "iconsHD\\PrototypeAmber.png"
 
@@ -814,7 +833,9 @@ HDPUFFERFISH            PNG                     "iconsHD\\Pufferfish.png"
 
 HDPURPLESHIRAKODAI      PNG                     "iconsHD\\PurpleShirakodai.png"
 
-HDPYROABYSSLECTOR 		PNG                     "iconsHD\\PyroAbyssLector.png"
+HDPUZZLES               PNG                     "iconsHD\\Puzzles.png"
+
+HDPYROABYSSLECTOR       PNG                     "iconsHD\\PyroAbyssLector.png"
 
 HDPYROHYPOSTASIS        PNG                     "iconsHD\\PyroHypostasis.png"
 
@@ -846,6 +867,8 @@ HDRECIPE                PNG                     "iconsHD\\Recipe.png"
 
 HDRECURVEBOW            PNG                     "iconsHD\\RecurveBow.png"
 
+HDREDCREST				PNG						"iconsHD\\Redcrest.png"
+
 HDREDFINNEDUNAGI        PNG                     "iconsHD\\RedFinnedUnagi.png"
 
 HDREDHORNEDLIZARD       PNG                     "iconsHD\\RedHornedLizard.png"
@@ -854,13 +877,15 @@ HDREDHORNSTONETHRESHER  PNG                     "iconsHD\\RedhornStonethresher.p
 
 HDREDTAILEDWEASEL       PNG                     "iconsHD\\RedTailedWeasel.png"
 
+HDRELAYSTONE            PNG                     "iconsHD\\RelayStone.png"
+
 HDREMARKABLECHEST       PNG                     "iconsHD\\RemarkableChest.png"
 
-HDRIFTHOUND 			PNG                     "iconsHD\\Rifthound.png"
+HDRIFTHOUND             PNG                     "iconsHD\\Rifthound.png"
 
-HDRIFTHOUNDWHELP 		PNG                     "iconsHD\\RifthoundWhelp.png"
+HDRIFTHOUNDWHELP        PNG                     "iconsHD\\RifthoundWhelp.png"
 
-HDRISHBOLANDTIGER	    PNG			            "iconsHD\\RishbolandTiger.png"
+HDRISHBOLANDTIGER       PNG                     "iconsHD\\RishbolandTiger.png"
 
 HDROCKPILE              PNG                     "iconsHD\\RockPile.png"
 
@@ -890,7 +915,7 @@ HDRUINSENTINEL          PNG                     "iconsHD\\RuinSentinel.png"
 
 HDRUINSERPENT           PNG                     "iconsHD\\RuinSerpent.png"
 
-
+HDRUKKHASHAVAMUSHROOM   PNG                     "iconsHD\\RukkhashavaMushroom.png"
 
 HDRUST                  PNG                     "iconsHD\\Rust.png"
 
@@ -906,15 +931,17 @@ HDSACRIFICIALGREATSWORD PNG                     "iconsHD\\SacrificialGreatsword.
 
 HDSACRIFICIALSWORD      PNG                     "iconsHD\\SacrificialSword.png"
 
-HDSAGHIRAMACHINE		PNG						"iconsHD\\SaghiraMachine.png"
+HDSAGHIRAMACHINE        PNG                     "iconsHD\\SaghiraMachine.png"
 
 HDSAKURABLOOM           PNG                     "iconsHD\\SakuraBloom.png"
 
-HDSALAMANDER 			PNG                     "iconsHD\\Salamander.png"
+HDSALAMANDER            PNG                     "iconsHD\\Salamander.png"
 
 HDSAMACHURL             PNG                     "iconsHD\\Samachurl.png"
 
 HDSANDBEARERWOOD        PNG                     "iconsHD\\SandbearerWood.png"
+
+HDSANDSTORMANGLER       PNG                     "iconsHD\\SandstormAngler.png"
 
 HDSANGONOMIYACOHORT     PNG                     "iconsHD\\SangonomiyaCohort.png"
 
@@ -928,7 +955,11 @@ HDSAPWOODBLADE          PNG                     "iconsHD\\SapwoodBlade.png"
 
 HDSAYU                  PNG                     "iconsHD\\Sayu.png"
 
+HDSCARAB				PNG						"iconsHD\\Scarab.png"
+
 HDSCARLETQUARTZ         PNG                     "iconsHD\\ScarletQuartz.png"
+
+HDSCORPION				PNG						"iconsHD\\Scorpion.png"
 
 HDSEAGANODERMA          PNG                     "iconsHD\\SeaGanoderma.png"
 
@@ -958,11 +989,13 @@ HDSEELIECOURT           PNG                     "iconsHD\\SeelieCourt.png"
 
 HDSEELIELAMP            PNG                     "iconsHD\\SeelieLamp.png"
 
+HDSEMIPERPETUALCONTROLMATRIX		PNG			"iconsHD\\SemiPerpetualControlMatrix.png"
+
 HDSERPENTSPINE          PNG                     "iconsHD\\SerpentSpine.png"
 
 HDSHADOWYHUSK           PNG                     "iconsHD\\ShadowyHusk.png"
 
-HDSHAGGYSUMPTERBEAST	PNG			            "iconsHD\\ShaggySumpterBeast.png"
+HDSHAGGYSUMPTERBEAST    PNG                     "iconsHD\\ShaggySumpterBeast.png"
 
 HDSHARPSHOOTERSOATH     PNG                     "iconsHD\\SharpshootersOath.png"
 
@@ -970,13 +1003,15 @@ HDSHENHE                PNG                     "iconsHD\\Shenhe.png"
 
 HDSHIKANOINHEIZOU       PNG                     "iconsHD\\ShikanoinHeizou.png"
 
-HDSHOGUN 				PNG                     "iconsHD\\Shogun.png"
+HDSHOGUN                PNG                     "iconsHD\\Shogun.png"
 
-HDSHOGUNATEINFANTRY 	PNG                     "iconsHD\\ShogunateInfantry.png"
+HDSHOGUNATEINFANTRY     PNG                     "iconsHD\\ShogunateInfantry.png"
 
-HDSHRINEOFDEPTH 		PNG                     "iconsHD\\Mondstadt.png"
+HDSHRINEOFDEPTH         PNG                     "iconsHD\\Mondstadt.png"
 
-HDSIGNORA 				PNG                     "iconsHD\\Signora.png"
+HDSHROOMBOAR            PNG                     "iconsHD\\Shroomboar.png"
+
+HDSIGNORA               PNG                     "iconsHD\\Signora.png"
 
 HDSILKFLOWER            PNG                     "iconsHD\\SilkFlower.png"
 
@@ -1026,7 +1061,7 @@ HDSONGOFBROKENPINES     PNG                     "iconsHD\\SongofBrokenPines.png"
 
 HDSPECTER               PNG                     "iconsHD\\Specter.png"
 
-HDSPINCROCODILE	        PNG			            "iconsHD\\Spincrocodile.png"
+HDSPINCROCODILE         PNG                     "iconsHD\\Spincrocodile.png"
 
 HDSQUIRREL              PNG                     "iconsHD\\Squirrel.png"
 
@@ -1042,7 +1077,7 @@ HDSTARSILVER            PNG                     "iconsHD\\Starsilver.png"
 
 HDSTATUEOFTHESEVEN      PNG                     "iconsHD\\StatueofTheSeven.png"
 
-HDSTONEPILLARSEAL		PNG						"iconsHD\\StonePillarSeal.png"
+HDSTONEPILLARSEAL       PNG                     "iconsHD\\StonePillarSeal.png"
 
 HDSTORMBARRIER          PNG                     "iconsHD\\StormBarrier.png"
 
@@ -1054,9 +1089,9 @@ HDSTRETCHYFUNGUS        PNG                     "iconsHD\\StretchyFungus.png"
 
 HDSUCROSE               PNG                     "iconsHD\\Sucrose.png"
 
-HDSUMERUROSE            PNG                     "iconsHD\\SumeruRose.png"
-
 HDSUMERUPUZZLES         PNG                     "iconsHD\\SumeruPuzzles.png"
+
+HDSUMERUROSE            PNG                     "iconsHD\\SumeruRose.png"
 
 HDSUMERUSHRINEOFDEPTHS  PNG                     "iconsHD\\SumeruShrineofDepths.png"
 
@@ -1065,6 +1100,8 @@ HDSUMMITSHAPER          PNG                     "iconsHD\\SummitShaper.png"
 HDSUNCRAB               PNG                     "iconsHD\\SunCrab.png"
 
 HDSUNNYLOACH            PNG                     "iconsHD\\SunnyLoach.png"
+
+HDSUNSETCLOUDANGLER     PNG                     "iconsHD\\SunsetCloudAngler.png"
 
 HDSUNSETLOACH           PNG                     "iconsHD\\SunsetLoach.png"
 
@@ -1076,7 +1113,7 @@ HDSWEETFLOWERMEDAKA     PNG                     "iconsHD\\SweetFlowerMedaka.png"
 
 HDSWORDHILT             PNG                     "iconsHD\\SwordHilt.png"
 
-HDTARTAGLIA 			PNG                     "iconsHD\\Tartaglia.png"
+HDTARTAGLIA             PNG                     "iconsHD\\Tartaglia.png"
 
 HDTEACOLOREDSHIRAKODAI  PNG                     "iconsHD\\TeaColoredShirakodai.png"
 
@@ -1116,7 +1153,7 @@ HDTHOMA                 PNG                     "iconsHD\\Thoma.png"
 
 HDTHREEBOXES            PNG                     "iconsHD\\ThreeBoxes.png"
 
-HDTHRILLINGTALESOFDRAGONSLAYERS PNG                     "iconsHD\\ThrillingTalesofDragonSlayers.png"
+HDTHRILLINGTALESOFDRAGONSLAYERS PNG             "iconsHD\\ThrillingTalesofDragonSlayers.png"
 
 HDTHUNDERINGPULSE       PNG                     "iconsHD\\ThunderingPulse.png"
 
@@ -1134,9 +1171,11 @@ HDTRAVELERSHANDYSWORD   PNG                     "iconsHD\\TravelersHandySword.pn
 
 HDTREASUREHOARDER       PNG                     "iconsHD\\TreasureHoarder.png"
 
+HDTREEOFDREAMS          PNG                     "iconsHD\\TreeofDreams.png"
+
 HDTRIANGULARMECHANISM   PNG                     "iconsHD\\TriangularMechanism.png"
 
-HDTRIYANASEEDS			PNG						"iconsHD\\TriYanaSeeds.png"
+HDTRIYANASEEDS          PNG                     "iconsHD\\TriYanaSeeds.png"
 
 HDTRUEFRUITANGLER       PNG                     "iconsHD\\TrueFruitAngler.png"
 
@@ -1164,6 +1203,8 @@ HDVIPARYAS              PNG                     "iconsHD\\Viparyas.png"
 
 HDVORTEXVANQUISHER      PNG                     "iconsHD\\VortexVanquisher.png"
 
+HDVULTURE				PNG						"iconsHD\\Vulture.png"
+
 HDWARMINGSEELIE         PNG                     "iconsHD\\WarmingSeelie.png"
 
 HDWASTERGREATSWORD      PNG                     "iconsHD\\WasterGreatsword.png"
@@ -1174,7 +1215,7 @@ HDWAVERIDERWAYPOINTCANNOTTELEPORT PNG           "iconsHD\\WaveriderWaypointCanno
 
 HDWEAPON                PNG                     "iconsHD\\Weapon.png"
 
-HDWEASEL 				PNG                     "iconsHD\\Weasel.png"
+HDWEASEL                PNG                     "iconsHD\\Weasel.png"
 
 HDWHIRLINGFUNGUS        PNG                     "iconsHD\\WhirlingFungus.png"
 
@@ -1190,7 +1231,7 @@ HDWHITETASSEL           PNG                     "iconsHD\\WhiteTassel.png"
 
 HDWHOPPERFLOWER         PNG                     "iconsHD\\Whopperflower.png"
 
-HDWIGEON 				PNG                     "iconsHD\\Wigeon.png"
+HDWIGEON                PNG                     "iconsHD\\Wigeon.png"
 
 HDWINDBLUMEODE          PNG                     "iconsHD\\WindblumeOde.png"
 
@@ -1248,7 +1289,11 @@ ADHIGAMAWOOD            PNG                     "icons\\AdhigamaWood.png"
 
 ADORNEDUNAGI            PNG                     "icons\\AdornedUnagi.png"
 
+AEONBLIGHTDRAKE			PNG						"icons\\AeonblightDrake.png"
+
 AIZENMEDAKA             PNG                     "icons\\AizenMedaka.png"
+
+AJILENAKH				PNG						"icons\\Ajilenakh.png"
 
 AKAIMAOU                PNG                     "icons\\AkaiMaou.png"
 
@@ -1260,7 +1305,7 @@ AMETHYSTLUMP            PNG                     "icons\\AmethystLump.png"
 
 ANCIENTRIME             PNG                     "icons\\AncientRime.png"
 
-ANDRIUS 				PNG                     "icons\\Andrius.png"
+ANDRIUS                 PNG                     "icons\\Andrius.png"
 
 ANEMOCRYSTALFLY         PNG                     "icons\\AnemoCrystalfly.png"
 
@@ -1352,7 +1397,7 @@ CICIN                   PNG                     "icons\\Cicin.png"
 
 CLOUDLEISURESTEPS       PNG                     "icons\\CloudleisureSteps.png"
 
-CLUSTERLEAFOFCULTIVATION PNG                     "icons\\ClusterleafOfCultivation.png"
+CLUSTERLEAFOFCULTIVATION PNG                    "icons\\ClusterleafOfCultivation.png"
 
 COMMONCHEST             PNG                     "icons\\CommonChest.png"
 
@@ -1400,7 +1445,7 @@ DANDY                   PNG                     "icons\\Dandy.png"
 
 DAWNCATCHER             PNG                     "icons\\Dawncatcher.png"
 
-DAYNIGHTSWITCHINGMECHANISM PNG                     "icons\\DayNightSwitchingMechanism.png"
+DAYNIGHTSWITCHINGMECHANISM PNG                  "icons\\DayNightSwitchingMechanism.png"
 
 DEEPSEAUNAGI            PNG                     "icons\\DeepSeaUnagi.png"
 
@@ -1414,9 +1459,7 @@ DENDROGRANUM            PNG                     "icons\\DendroGranum.png"
 
 DENDROPILE              PNG                     "icons\\DendroPile.png"
 
-
-
-DENDROROCK				PNG						"icons\\DendroRock.png"
+DENDROROCK              PNG                     "icons\\DendroRock.png"
 
 DIVDARAY                PNG                     "icons\\DivdaRay.png"
 
@@ -1495,8 +1538,6 @@ FLAMINGFLOWERSTAMEN     PNG                     "icons\\FlamingFlowerStamen.png"
 FLOATINGANEMOSLIME      PNG                     "icons\\FloatingAnemoSlime.png"
 
 FLOATINGFUNGUS          PNG                     "icons\\FloatingFungus.png"
-
-FLOATINGHYDROFUNGUS     PNG                     "icons\\FloatingHydroFungus.png"
 
 FLUORESCENTFUNGUS       PNG                     "icons\\FluorescentFungus.png"
 
@@ -1644,7 +1685,7 @@ LUMINOUSSEELIE          PNG                     "icons\\LuminousSeelie.png"
 
 LUNGEDSTICKLEBACK       PNG                     "icons\\LungedStickleback.png"
 
-LUPUSBOREASDOMINATOROFWOLVES PNG                     "icons\\LupusBoreasDominatorofWolves.png"
+LUPUSBOREASDOMINATOROFWOLVES PNG                "icons\\LupusBoreasDominatorofWolves.png"
 
 LUXURIOUSCHEST          PNG                     "icons\\LuxuriousChest.png"
 
@@ -1756,6 +1797,8 @@ PRECIOUSCHEST           PNG                     "icons\\PreciousChest.png"
 
 PRESSUREPLATE           PNG                     "icons\\PressurePlate.png"
 
+PRIMALCONSTRUCT			PNG						"icons\\PrimalConstruct.png"
+
 PRIMOGEOVISHAP          PNG                     "icons\\PrimoGeovishap.png"
 
 PUFFERFISH              PNG                     "icons\\Pufferfish.png"
@@ -1783,6 +1826,8 @@ RAIMEIANGELFISH         PNG                     "icons\\RaimeiAngelfish.png"
 RAWMEAT                 PNG                     "icons\\RawMeat.png"
 
 RECIPE                  PNG                     "icons\\Recipe.png"
+
+REDCREST				PNG						"icons\\Redcrest.png"
 
 REDFINNEDUNAGI          PNG                     "icons\\RedFinnedUnagi.png"
 
@@ -1840,7 +1885,11 @@ SANGOPEARL              PNG                     "icons\\SangoPearl.png"
 
 SAPPHIRE                PNG                     "icons\\Sapphire.png"
 
+SCARAB					PNG						"icons\\Scarab.png"
+
 SCARLETQUARTZ           PNG                     "icons\\ScarletQuartz.png"
+
+SCORPION				PNG						"icons\\Scorpion.png"
 
 SEAGANODERMA            PNG                     "icons\\SeaGanoderma.png"
 
@@ -1868,6 +1917,8 @@ SEELIECOURT             PNG                     "icons\\SeelieCourt.png"
 
 SEELIELAMP              PNG                     "icons\\SeelieLamp.png"
 
+SEMIPERPETUALCONTROLMATRIX		PNG				"icons\\SemiPerpetualControlMatrix.png"
+
 SHADOWYHUSK             PNG                     "icons\\ShadowyHusk.png"
 
 SHAGGYSUMPTERBEAST      PNG                     "icons\\ShaggySumpterBeast.png"
@@ -1876,9 +1927,7 @@ SHOGUN                  PNG                     "icons\\Shogun.png"
 
 SHOGUNATEINFANTRY       PNG                     "icons\\ShogunateInfantry.png"
 
-SUMERUPUZZLES           PNG                     "icons\\SumeruPuzzles.png"
-
-SHRINEOFDEPTH 			PNG                     "icons\\ShrineOfDepth.png"
+SHRINEOFDEPTH           PNG                     "icons\\ShrineOfDepth.png"
 
 SHROOMBOAR              PNG                     "icons\\Shroomboar.png"
 
@@ -1932,6 +1981,8 @@ STRANGETOOTH            PNG                     "icons\\StrangeTooth.png"
 
 STRETCHYFUNGUS          PNG                     "icons\\StretchyFungus.png"
 
+SUMERUPUZZLES           PNG                     "icons\\SumeruPuzzles.png"
+
 SUMERUROSE              PNG                     "icons\\SumeruRose.png"
 
 SUMERUSHRINEOFDEPTHS    PNG                     "icons\\SumeruShrineofDepths.png"
@@ -1966,9 +2017,9 @@ THEEREMITES             PNG                     "icons\\TheEremites.png"
 
 THEGREATSNOWBOARKING    PNG                     "icons\\TheGreatSnowboarKing.png"
 
-THEWITHERING            PNG                     "icons\\TheWithering.png"
-
 THERAVENFORUM           PNG                     "icons\\TheRavenForum.png"
+
+THEWITHERING            PNG                     "icons\\TheWithering.png"
 
 THREEBOXES              PNG                     "icons\\ThreeBoxes.png"
 
@@ -2006,9 +2057,11 @@ VIOLETIBIS              PNG                     "icons\\VioletIbis.png"
 
 VIPARYAS                PNG                     "icons\\Viparyas.png"
 
+VULTURE					PNG						"icons\\Vulture.png"
+
 WARMINGSEELIE           PNG                     "icons\\WarmingSeelie.png"
 
-WAVERIDERWAYPOINTCANNOTTELEPORT PNG                     "icons\\WaveriderWaypointCannotTeleport.png"
+WAVERIDERWAYPOINTCANNOTTELEPORT PNG             "icons\\WaveriderWaypointCannotTeleport.png"
 
 WEAPON                  PNG                     "icons\\Weapon.png"
 

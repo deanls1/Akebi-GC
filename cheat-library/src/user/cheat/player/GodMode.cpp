@@ -72,7 +72,7 @@ namespace cheat::feature
 
     // Analog function for disable attack damage (Thanks to Taiga74164)
     //void GodMode::LCBaseCombat_FireBeingHitEvent_Hook(app::LCBaseCombat* __this, uint32_t attackeeRuntimeID, app::AttackResult* attackResult, MethodInfo* method)
-    //{        
+    //{
     //    auto& gm = GodMode::GetInstance();
     //    auto& manager = game::EntityManager::instance();
     //    if (gm.f_AltGodMode && manager.avatar()->runtimeID() == attackeeRuntimeID)

@@ -51,7 +51,7 @@ namespace cheat::feature
     {
         ImGui::Text(u8"自定义天气");
         if (f_Lightning)
-           ImGui::Text(u8"高亮敌人");
+            ImGui::Text(u8"高亮敌人");
     }
 
     CustomWeather& CustomWeather::GetInstance()
